@@ -173,6 +173,8 @@ else:
                     # do this automatically in case config.media_embed has not been
                     # set explicitly.
                     embed = "google.colab" in str(get_ipython())
+                    config["media_embed"] = embed
+                    config.media_embed = embed
 
                 if file_type.startswith("image"):
                     result = Image(filename=config["output_file"])
