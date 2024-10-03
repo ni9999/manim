@@ -175,6 +175,7 @@ else:
                     embed = "google.colab" in str(get_ipython())
                     config["media_embed"] = embed
                     config.media_embed = embed
+                    print(embed, config.media_embed, config["media_embed"])
 
                 if file_type.startswith("image"):
                     result = Image(filename=config["output_file"])
